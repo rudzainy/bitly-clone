@@ -14,6 +14,7 @@ post '/urls' do
     url.shorten
     if url.save
       redirect to '/'
+      # url.to_json
     else
       @flash = "Invalid URL. Did you include 'http://' or 'https://'?"
       @urls = Url.all.order("click_count DESC")

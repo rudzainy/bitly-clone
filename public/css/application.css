@@ -101,7 +101,7 @@ table tr:last-child td:last-child {
   border: none;
 }
 
-#shortener_form input[type=text] {
+#shortener_form input[type=url] {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   font-size: 18px;

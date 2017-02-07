@@ -1,13 +1,13 @@
 <div id="header">
   <div class="container container-center">
-    <h1>
+    <h1 class="center">
       THE LINK KNOWS ALL. SO CAN YOU.
     </h1>
-    <div class="sub-heading">
+    <div class="sub-heading center">
       Own your links with Bitly, the world’s leading customer experience platform.
     </div>
     <form action="/urls" method="post" id="shortener_form">
-        <input type="text" name="long_url" placeholder="Paste a link to shorten it">
+        <input type="url" name="long_url" placeholder="Paste a link to shorten it" required pattern="https?://.+" id="form_input">
         <input type="submit" value="SHORTEN">
     </form>
   </div>
