@@ -141,3 +141,10 @@ table tr:last-child td:last-child {
   padding-top: 72px;
   padding-bottom: 72px;
 }
+
+@media (max-width: 400px) {
+
+  #form_input {
+    width: 100% !important;
+  }
+}

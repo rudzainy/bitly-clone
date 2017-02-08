@@ -13,8 +13,8 @@ post '/urls' do
     url = Url.new(long_url: params[:long_url])
     url.shorten
     if url.save
-      redirect to '/'
-      # url.to_json
+      # redirect to '/'
+      url.to_json
     else
       @flash = "Invalid URL. Did you include 'http://' or 'https://'?"
       @urls = Url.all.order("click_count DESC")
